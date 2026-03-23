@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #1E40AF;
+  --secondary-color: #10B981;
+  --bg-color: #F8FAFC;
+  --text-dark: #1F2937;
+  --border-color: #E5E7EB;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary-custom:hover {
+  background-color: #1c3aa9;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.15rem rgba(30, 64, 175, 0.25);
+}
+
+.btn-login {
+  background: #1e3a8a;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #d4af37;
+  color: black;
+}
+

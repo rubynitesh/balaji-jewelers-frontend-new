@@ -1,0 +1,196 @@
+/* ============================= */
+/* 💎 PRODUCT PAGE CONTAINER */
+/* ============================= */
+
+.product-container {
+  padding: 30px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.product-container h2 {
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #0f2c59;
+  letter-spacing: 1px;
+}
+
+
+/* ============================= */
+/* 💎 PRODUCT FORM CARD */
+/* ============================= */
+
+.product-form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-bottom: 35px;
+  transition: 0.3s ease;
+}
+
+.product-form:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.product-form input,
+.product-form select {
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.product-form input:focus,
+.product-form select:focus {
+  border-color: #d4af37;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+  background: #fff;
+}
+
+/* Checkbox */
+.product-form label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+/* Buttons */
+.product-form button {
+  grid-column: span 2;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #0f2c59, #1b4d89);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-form button:hover {
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+  color: #0f2c59;
+  transform: translateY(-2px);
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background: #999 !important;
+  margin-top: 8px;
+}
+
+.cancel-btn:hover {
+  background: #777 !important;
+  color: #fff !important;
+}
+
+
+/* ============================= */
+/* 💎 PRODUCT TABLE */
+/* ============================= */
+
+.product-table {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.product-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.product-table thead {
+  background: #0f2c59;
+  color: white;
+}
+
+.product-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.product-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.product-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+/* Status Styling */
+.product-table td:nth-child(8) {
+  font-weight: 600;
+}
+
+.product-table td:nth-child(8):contains("Active") {
+  color: green;
+}
+
+.product-table td:nth-child(8):contains("Inactive") {
+  color: red;
+}
+
+/* Action Buttons */
+.product-table button {
+  padding: 6px 10px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Edit Button */
+.product-table button:first-child {
+  background: #1b4d89;
+  color: white;
+}
+
+.product-table button:first-child:hover {
+  background: #0f2c59;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #c0392b;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #922b21;
+}
+
+
+/* ============================= */
+/* 💎 RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .product-form {
+    grid-template-columns: 1fr;
+  }
+
+  .product-form button {
+    grid-column: span 1;
+  }
+}

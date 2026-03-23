@@ -1,0 +1,11 @@
+/* Layout ko flex banaye taki footer bottom me rahe */
+.admin-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full screen height */
+}
+
+.admin-content {
+  flex: 1; /* content ko stretch kar ke footer ko bottom pe push kare */
+  padding: 20px; /* content padding */
+}

@@ -1,0 +1,354 @@
+/* ============================= */
+/* BILL LIST PAGE */
+/* ============================= */
+
+.bill-container {
+  padding: 30px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.status-paid{
+  background:#28a745;
+  color:white;
+  padding:4px 12px;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.status-pending{
+  background:#f39c12;
+  color:white;
+  padding:4px 12px;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.status-reject{
+  background:#e74c3c;
+  color:white;
+  padding:4px 12px;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.status-default{
+  background:#6c757d;
+  color:white;
+  padding:4px 12px;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:600;
+}
+
+
+/* HEADER */
+
+.bill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.bill-header h2 {
+  font-weight: 700;
+  color: #0f2c59;
+}
+
+/* CREATE BUTTON */
+
+.create-btn {
+  padding: 10px 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #0f2c59, #1b4d89);
+  color: white;
+  transition: 0.3s;
+}
+
+.create-btn:hover {
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+  color: #0f2c59;
+}
+
+/* ============================= */
+/* BILL TABLE */
+/* ============================= */
+
+.bill-table {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+.bill-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bill-table thead {
+  background: #0f2c59;
+  color: white;
+}
+
+.bill-table th,
+.bill-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.bill-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.bill-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+/* ============================= */
+/* ACTION BUTTONS */
+/* ============================= */
+
+.bill-table td:last-child{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.view-btn,
+.edit-btn,
+.pdf-btn,
+.delete-btn{
+  padding:6px 12px;
+  border:none;
+  border-radius:6px;
+  font-size:13px;
+  cursor:pointer;
+}
+
+.view-btn{
+  background:#1b4d89;
+  color:white;
+}
+
+.edit-btn{
+  background:#d4af37;
+  color:#0f2c59;
+}
+
+.pdf-btn{
+  background:#2c3e50;
+  color:white;
+}
+
+.delete-btn{
+  background:#c0392b;
+  color:white;
+}
+
+/* ============================= */
+/* CREATE BILL FORM */
+/* ============================= */
+
+.bill-form {
+  background:#fff;
+  padding:25px;
+  border-radius:14px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.bill-form input,
+.bill-form select{
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+
+.item-section{
+  grid-column:span 2;
+}
+
+.item-row{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr auto;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.add-btn{
+  margin-bottom:10px;
+  padding:6px 12px;
+  background:#1b4d89;
+  color:white;
+  border:none;
+  border-radius:6px;
+}
+
+.total-section{
+  grid-column:span 2;
+  text-align:right;
+  font-weight:bold;
+}
+
+/* ============================= */
+/* BILL VIEW PAGE */
+/* ============================= */
+
+.bill-card{
+  width:900px;
+  margin:auto;
+  background:#fff;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.tax-header{
+  display:flex;
+  justify-content:space-between;
+  border-bottom:2px solid #eee;
+  padding-bottom:10px;
+  margin-bottom:20px;
+}
+
+.tax-title{
+  font-size:22px;
+  font-weight:bold;
+  color:#0a3d62;
+}
+
+.shop-header{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.shop-left h1{
+  margin:0;
+  color:#0a3d62;
+}
+
+.shop-left p{
+  margin:3px 0;
+  font-size:14px;
+}
+
+.shop-right{
+  text-align:right;
+}
+
+.shop-right p{
+  margin:4px 0;
+  font-size:14px;
+}
+
+/* ============================= */
+/* SUMMARY */
+/* ============================= */
+
+.summary{
+  display:flex;
+  justify-content:flex-end;
+  margin-top:20px;
+}
+
+.summary-box{
+  text-align:right;
+}
+
+.summary-box h2{
+  margin-top:10px;
+  color:#c59d00;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.bill-footer{
+  display:flex;
+  justify-content:space-between;
+  margin-top:30px;
+}
+
+.signature{
+  text-align:right;
+}
+
+/* ============================= */
+/* ACTION BUTTONS */
+/* ============================= */
+
+.actions{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-top:25px;
+}
+
+.actions button{
+  padding:10px 18px;
+  border:none;
+  border-radius:6px;
+  background:#0a3d62;
+  color:white;
+  cursor:pointer;
+}
+
+.print-btn{
+  background:#27ae60;
+}
+
+/* ============================= */
+/* PRINT */
+/* ============================= */
+
+@media print{
+
+  .no-print{
+    display:none;
+  }
+
+  .bill-container{
+    padding:0;
+    background:white;
+  }
+
+  .bill-card{
+    box-shadow:none;
+    width:100%;
+  }
+
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width:768px){
+
+  .bill-header{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .bill-form{
+    grid-template-columns:1fr;
+  }
+
+  .item-row{
+    grid-template-columns:1fr;
+  }
+
+}

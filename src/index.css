@@ -1,0 +1,29 @@
+/* src/index.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* body {
+  background: linear-gradient(135deg, #0f2027, #14532d, #d4af37);
+} */
+
+body {
+    background: linear-gradient(135deg, #f8f1e4, #e6c77d);
+}
+
+
+
+
+
+
+
+
+
+
+
+

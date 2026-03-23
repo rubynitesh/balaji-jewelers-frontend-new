@@ -1,0 +1,147 @@
+/* ===== PREMIUM GOLD HEADER ===== */
+.custom-navbar {
+  /* ⚡ FIXED HEADER */
+  position: fixed;           /* Header hamesha top pe rahega */
+  top: 0;
+  left: 0;
+  width: 100%;               /* Full width header */
+  z-index: 1000;             /* Content ke upar rahe */
+
+  background: linear-gradient(135deg, #fefefc, #f3f2f1);
+  padding: 14px 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* LOGO */
+.brand-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f2c59;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.brand-logo:hover {
+  color: #000;
+}
+
+/* NAVIGATION */
+.nav-link {
+  font-weight: 600;
+  color: #0f2c59 !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Underline hover animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+}
+
+/* ===== USER PROFILE BADGE ===== */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: rgba(255, 255, 255, 0.25);
+  padding: 6px 14px;
+  border-radius: 30px;
+
+  font-weight: 600;
+  font-size: 14px;
+  color: #0f2c59;
+
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.user-info:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-circle {
+  width: 32px;
+  height: 32px;
+  background: #0f2c59;
+  color: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* profile dropdown */
+.profile-container {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 55px;
+  background: white;
+  width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  padding: 8px 0;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.dropdown-item {
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.logout {
+  color: red;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ⚡ BODY/CONTENT ADJUSTMENT: Header fixed hai, content upar na chhup jaye */
+body, .page-content {
+  padding-top: 70px; /* Header height ke barabar adjust kare */
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+}

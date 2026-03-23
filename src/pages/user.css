@@ -1,0 +1,44 @@
+/* user.css */
+
+/* Container */
+.user-container {
+  padding: 27px;
+  background-color: #f9f9f9;
+}
+
+/* Header area */
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+/* Create User button */
+.btn-create-user {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Table */
+.user-table {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+.user-table th, .user-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Modal spacing */
+.modal-title {
+  font-weight: bold;
+}
+
+/* Form elements */
+.form-control, .form-select {
+  margin-bottom: 12px;
+}

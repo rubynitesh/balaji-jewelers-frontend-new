@@ -1,0 +1,117 @@
+.category-container {
+  padding: 30px;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #0f2c59;
+}
+
+.category-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.category-form {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.category-form input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.category-form button {
+  background-color: #0f2c59;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.category-form button:hover {
+  background-color: #caa14a;
+  color: black;
+}
+
+.category-table-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #0f2c59;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  opacity: 0.8;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+
+.active-badge {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.inactive-badge {
+  background-color: #6c757d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}

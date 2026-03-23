@@ -1,0 +1,56 @@
+:root {
+  --primary-color: #C6A34E;
+  --secondary-color: #1E1E1E;
+  --light-bg: #F8F6F0;
+}
+
+/* Global */
+body {
+  background-color: var(--light-bg);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.custom-navbar {
+  background-color: var(--secondary-color);
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Logo */
+.brand-logo {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Username */
+.user-info {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-gold {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.btn-gold:hover {
+  background-color: #a88634;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+}
