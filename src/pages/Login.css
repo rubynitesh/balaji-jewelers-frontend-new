@@ -6,10 +6,51 @@
   --border-color: #E5E7EB;
 }
 
+/* ✅ FIX 1: Remove default browser margin */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* ✅ FIX 2: Allow scroll but style it */
 body {
+  overflow-y: auto; /* ✅ scrollbar allowed */
+  overflow-x: hidden; /* ❌ horizontal scroll remove */
   background-color: var(--bg-color);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-dark);
+}
+
+/* OPTIONAL: root container fix */
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* 🌟 CUSTOM SCROLLBAR (Chrome, Edge, Brave) */
+::-webkit-scrollbar {
+  width: 8px; /* thin scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3); /* dark track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ffd700, #ffb300); /* gold gradient */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ffcc00, #ff9900);
+}
+
+/* 🌟 Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffd700 rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary-custom {
@@ -39,3 +80,78 @@ body {
   color: black;
 }
 
+/* 🌟 Full Background */
+.login-container {
+  min-height: 100vh; /* ✅ better than height */
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1617038220319-276d3cfab638") no-repeat center center/cover;
+  position: relative;
+}
+
+/* 🔥 Dark overlay */
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 0;
+}
+
+/* 🧊 Glass Card */
+.login-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(15px);
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* 🏆 Title */
+.login-title {
+  color: #ffd700;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ✨ Inputs */
+.custom-input {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: none !important;
+  border-radius: 10px !important;
+  color: #fff !important;
+  padding: 10px;
+}
+
+.custom-input::placeholder {
+  color: #ddd !important;
+}
+
+/* 🔥 Focus Glow */
+.custom-input:focus {
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.9) !important;
+  border: none !important;
+}
+
+/* 🎯 Button */
+.btn-primary-custom {
+  background: linear-gradient(45deg, #ffd700, #ffb300);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+/* 🚀 Hover */
+.btn-primary-custom:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ffcc00, #ff9900);
+}
+
+/* 📱 spacing */
+.card-body {
+  padding: 30px !important;
+}

@@ -25,13 +25,13 @@ const ProductPage = () => {
 
   // 🔹 Load Categories
   const fetchCategories = async () => {
-    const res = await axios.get("http://localhost:3030/api/categories");
+    const res = await axios.get("http://localhost:3939/api/categories");
     setCategories(res.data);
   };
 
   // 🔹 Load Products
   const fetchProducts = async () => {
-    const res = await axios.get("http://localhost:3030/api/products");
+    const res = await axios.get("http://localhost:3939/api/products");
     setProducts(res.data);
   };
 
@@ -63,12 +63,12 @@ const ProductPage = () => {
 
       if (isEditing) {
         await axios.put(
-          `http://localhost:3030/api/products/${editId}`,
+          `http://localhost:3939/api/products/${editId}`,
           formData
         );
       } else {
         await axios.post(
-          "http://localhost:3030/api/products",
+          "http://localhost:3939/api/products",
           formData
         );
       }
@@ -93,7 +93,7 @@ const ProductPage = () => {
   // 🔹 Delete
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure to delete?")) {
-      await axios.delete(`http://localhost:3030/api/products/${id}`);
+      await axios.delete(`http://localhost:3939/api/products/${id}`);
       fetchProducts();
     }
   };
